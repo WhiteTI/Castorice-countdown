@@ -5,7 +5,6 @@ import {useCountdown} from "@/hook/useCountdown";
 
 const Timer = () => {
     const obj = useCountdown([2025, 3, 9, 3])
-    const [time, setTime] = useState('00:00:00:00');
 
     function getZero(num) {
         if (num >= 0 && num < 10)
@@ -18,6 +17,8 @@ const Timer = () => {
         const {days, hours, minutes, seconds} = timeObject
         return `${getZero(days)}:${getZero(hours)}:${getZero(minutes)}:${getZero(seconds)}`;
     }
+
+    const [time, setTime] = useState('00:00:00:00');
 
     useEffect(() => {
         setTime(formatTimer(obj))
