@@ -5,11 +5,7 @@ export default function Home() {
 
     return (
         <>
-            <div className='h-screen w-full bg-slate-900 fixed inset-0'>
-                <video autoPlay loop muted playsInline className='min-h-screen object-cover object-center'>
-                    <source src='/castorice-honkai-star-rail-dream-butterfly-dance-moewalls-com.mp4' type='video/mp4' />
-                </video>
-            </div>
+            <div className='h-screen w-full bg-slate-900 bgImage fixed inset-0'></div>
 
             <div className='w-full backdrop-blur-sm text-purple-500 bg-slate-900/30 relative overflow-x-auto flex flex-col'>
                 <div className='min-h-screen flex items-center justify-center'>
